@@ -1,0 +1,90 @@
+import type { Expense, ExpenseSummary } from '@/lib/types';
+
+export const MOCK_EXPENSES: Expense[] = [
+  {
+    id: 'exp-001',
+    trip_id: 'trip-delhi-jaipur-001',
+    category: 'transport',
+    amount: 800,
+    description: 'Petrol — Delhi to Jaipur highway',
+    logged_at: '2025-07-01T07:30:00Z',
+  },
+  {
+    id: 'exp-002',
+    trip_id: 'trip-delhi-jaipur-001',
+    category: 'food',
+    amount: 250,
+    description: 'Breakfast at Highway Dhaba',
+    logged_at: '2025-07-01T09:00:00Z',
+  },
+  {
+    id: 'exp-003',
+    trip_id: 'trip-delhi-jaipur-001',
+    category: 'entry_fee',
+    amount: 200,
+    description: 'Amber Fort entry ticket',
+    logged_at: '2025-07-01T10:30:00Z',
+  },
+  {
+    id: 'exp-004',
+    trip_id: 'trip-delhi-jaipur-001',
+    category: 'entry_fee',
+    amount: 50,
+    description: 'Hawa Mahal entry',
+    logged_at: '2025-07-01T13:00:00Z',
+  },
+  {
+    id: 'exp-005',
+    trip_id: 'trip-delhi-jaipur-001',
+    category: 'food',
+    amount: 350,
+    description: 'Lunch at LMB (Laxmi Mishthan Bhandar)',
+    logged_at: '2025-07-01T14:00:00Z',
+  },
+  {
+    id: 'exp-006',
+    trip_id: 'trip-delhi-jaipur-001',
+    category: 'stay',
+    amount: 1200,
+    description: 'Hotel Pearl Palace — 1 night',
+    logged_at: '2025-07-01T18:00:00Z',
+  },
+  {
+    id: 'exp-007',
+    trip_id: 'trip-delhi-jaipur-001',
+    category: 'entry_fee',
+    amount: 300,
+    description: 'City Palace museum',
+    logged_at: '2025-07-02T10:00:00Z',
+  },
+  {
+    id: 'exp-008',
+    trip_id: 'trip-delhi-jaipur-001',
+    category: 'food',
+    amount: 180,
+    description: 'Street food at Johari Bazaar',
+    logged_at: '2025-07-02T12:30:00Z',
+  },
+  {
+    id: 'exp-009',
+    trip_id: 'trip-delhi-jaipur-001',
+    category: 'misc',
+    amount: 120,
+    description: 'Auto rickshaw to Nahargarh Fort',
+    logged_at: '2025-07-02T14:00:00Z',
+  },
+];
+
+export const MOCK_EXPENSE_SUMMARY: ExpenseSummary = {
+  total_spent: 3450,
+  total_budget: 5000,
+  remaining: 1550,
+  by_category: {
+    transport: 800,
+    food: 780,
+    stay: 1200,
+    entry_fee: 550,
+    misc: 120,
+  },
+  expenses: MOCK_EXPENSES,
+};
